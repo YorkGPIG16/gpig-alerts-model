@@ -11,5 +11,5 @@ import java.util.List;
 @XmlRootElement(name="Alerts")
 public class AlertMessage {
     @XmlElement(name="alert")
-    List<Alert> alerts;
+    public List<Alert> alerts;
 }
