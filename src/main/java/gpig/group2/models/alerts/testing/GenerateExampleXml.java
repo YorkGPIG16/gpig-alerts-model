@@ -11,7 +11,7 @@ import java.util.ArrayList;
 /**
  * Created by james on 17/05/2016.
  */
-public class Gen {
+public class GenerateExampleXml {
     public static void main(String[] args) {
         Alert a = new Alert();
         a.id=444;
@@ -19,7 +19,7 @@ public class Gen {
         a.priority = Priority.PRIORITY_HIGH;
 
         Alert b = new Alert();
-        b.id=444;
+        b.id=555;
         b.message="This is an alert";
         b.priority = Priority.PRIORITY_HIGH;
         b.action = new Action();
