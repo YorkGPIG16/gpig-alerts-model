@@ -8,7 +8,7 @@ import java.util.List;
  * Created by james on 17/05/2016.
  */
 
-@XmlRootElement(name="Alerts")
+@XmlRootElement(name="alerts")
 public class AlertMessage {
     @XmlElement(name="alert")
     public List<Alert> alerts;
