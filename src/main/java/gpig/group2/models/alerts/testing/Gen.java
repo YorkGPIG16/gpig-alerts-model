@@ -19,6 +19,7 @@ public class Gen {
         a.id=444;
         a.message="This is an alert";
         a.priority = Priority.PRIORITY_HIGH;
+        
 
         AlertMessage msg = new AlertMessage();
         msg.alerts = new ArrayList<>();

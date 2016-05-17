@@ -13,6 +13,9 @@ public class Alert {
     @XmlAttribute(name="id")
     public Integer id;
 
+    @XmlElement(name="action")
+    public Action action = Action.ACTION_NOT_ACTIONED;
+
     @XmlAttribute(name="priority")
     public Priority priority;
 
