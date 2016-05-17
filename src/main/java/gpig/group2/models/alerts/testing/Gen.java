@@ -1,8 +1,6 @@
 package gpig.group2.models.alerts.testing;
 
-import gpig.group2.models.alerts.Alert;
-import gpig.group2.models.alerts.AlertMessage;
-import gpig.group2.models.alerts.Priority;
+import gpig.group2.models.alerts.*;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -19,11 +17,20 @@ public class Gen {
         a.id=444;
         a.message="This is an alert";
         a.priority = Priority.PRIORITY_HIGH;
-        
+
+        Alert b = new Alert();
+        b.id=444;
+        b.message="This is an alert";
+        b.priority = Priority.PRIORITY_HIGH;
+        b.action = new Action();
+        b.action.message = "Message";
+        b.action.status = ActionStatus.ACTION_ACTIONED;
+
 
         AlertMessage msg = new AlertMessage();
         msg.alerts = new ArrayList<>();
         msg.alerts.add(a);
+        msg.alerts.add(b);
 
         StringWriter sw = new StringWriter();
         JAXBContext jaxbContext = null;
