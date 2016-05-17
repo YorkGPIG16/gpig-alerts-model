@@ -1,9 +1,6 @@
 package gpig.group2.models.alerts;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlEnumValue;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 
 /**
  * Created by james on 17/05/2016.
@@ -12,9 +9,9 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name="action")
 public class Action {
 
-    @XmlElement(name="status")
+    @XmlAttribute(name="status")
     public ActionStatus status;
-    
+
     @XmlElement(name="message")
     public String message;
 }
