@@ -1,3 +1,5 @@
+package gpig.group2.models.alerts.testing;
+
 import gpig.group2.models.alerts.Alert;
 import gpig.group2.models.alerts.AlertMessage;
 import gpig.group2.models.alerts.Priority;
